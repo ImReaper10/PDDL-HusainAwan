@@ -14,5 +14,7 @@ This repository contains a PDDL‐based “routing” agent that picks the best 
  **Python Code**  
    - `solve.py` (the feed-forward agent + solver)  
    -  `pddl_generator.py` (to dynamically generate PDDL via the OpenRouter API)
+
 **Output**
+ - The Output when I run solve.py
 ![image](https://github.com/user-attachments/assets/8fd5baff-ae87-46c2-8c8b-7069b7edcf1d)
