@@ -1,0 +1,15 @@
+(define (domain openrouter-simple)
+  (:requirements :typing)
+  (:types llm provider capability request)
+  (:predicates
+    (has-capability ?m - llm ?c - capability)
+    (provided-by ?m - llm ?p - provider)
+    (request-requires ?r - request ?c - capability)
+    (routed ?r - request ?m - llm)
+  )
+  (:action route-request
+    :parameters (?r - request ?m - llm ?c - capability)
+    :precondition (and (request-requires ?r ?c) (has-capability ?m ?c))
+    :effect (routed ?r ?m)
+  )
+)
