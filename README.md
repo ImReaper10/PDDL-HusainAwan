@@ -1,5 +1,5 @@
 # PDDL-HusainAwan
-This repository contains a PDDL‐based “routing” agent that picks the best LLM for each request, based on capability (and optionally budget/token constraints).  It uses:
+This repository contains a PDDL‐based “routing” agent that picks the best LLM for each request, based on capability.  It uses:
 
 - **PDDL** for domain & problem modeling  
 - **Unified Planning** (Python) to parse & solve  
